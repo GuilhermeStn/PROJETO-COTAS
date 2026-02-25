@@ -47,8 +47,22 @@ function jurr(){
     var juros = rendimento.value * cotas.value
     alert(juros)
     
-    var conteudo = document.querySelector("mostrar");
+    var conteudo = document.getElementById("mostrar");
     conteudo.innerHTML = "<h2>rendimento de: </h2>"+juros;
+
+    if (juros<valor_compra.value){
+        var teste = document.getElementById("mostrar");
+        window.alert("Rendimento menor doque cota")
+        teste.innerText = `RENDIMENTO DE R$${juros} , valor da cota em R$${valor_compra.value}`; // em crase no mesmo html 
+        /// LOOPING E COND
+        while (juros<valor_compra.value){
+            alert("loop")
+            cotas.value = cotas.value + 1 
+            console.log(cotas.value)
+        }
+    }
+
+
 
 }
  
