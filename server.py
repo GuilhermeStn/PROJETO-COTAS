@@ -15,7 +15,14 @@ def index():
     return render_template("main.html")
     
 
-
+@app.route("/pagamento",methods=["GET","POST"])
+def pagamento():
+    email = request.form.get("email-valor")
+    dadosc = request.form.get("dados-cart")
+    print(f"O email é {email}")
+    print(f"Os dados do cartão {dadosc}")
+    
+    return render_template("pagamento.html")
 
 
 @app.route("/contato")

@@ -1,0 +1,120 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+}
+
+
+body{
+    background: #020024;
+    background: linear-gradient(83deg, rgba(2, 0, 36, 1) 8%, rgba(24, 24, 28, 1) 10%, rgba(171, 200, 209, 1) 100%);
+    height: 100%;
+    background-attachment: fixed;
+    color:black;
+}
+
+h1{
+    text-align: center;
+    color:#ffffff;
+    font-size: 50px;
+}
+
+section.pagamento{ 
+    display: flex;
+    max-width: 960px;
+    justify-content: space-around;
+    padding: 0 2%;
+    margin: 90px auto;
+}
+
+.descricao-pagamento{
+    width: 40%;
+    font-size: 40px;
+
+}
+
+.descricao-pagamento h3{
+    color:pink
+}
+
+.descricao-pagamento h2{
+    color:pink;
+    font-weight: 800;
+    font-style: oblique;
+    font-size: 50px ;
+}
+.descricao-pagamento h3:hover{
+    scale:110%;
+    color:rgb(221, 217, 217);
+    font-style: italic;
+}
+
+.form-pagamento{
+    width:50%;
+    padding-left:80px; 
+      box-shadow: 4px 5px 11px -3px rgba(18, 18, 18, 0.72);
+    -webkit-box-shadow: 4px 5px 11px -3px rgba(0, 0, 0, 0.72);
+    -moz-box-shadow: 4px 5px 11px -3px rgba(18, 16, 16, 0.72);
+    border-radius: 10px;
+    background: rgba(255, 0, 0, 0) ;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.form-pagamento form{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.form-100{
+    width:100%;
+    padding-right: 30px;
+    margin-bottom: 4px;
+}
+
+.form-50{
+    width: 100%;display: flex;
+    margin-bottom: 4px;
+}
+
+.form-pagamento label{
+    display: block;
+}
+
+.form-pagamento input[type=text]{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 10px ;
+    padding-left: 10px;
+    color:black;
+}
+
+@media screen and  (max-width:768px) {
+    .descricao-pagamento,.form-pagamento{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+    
+
+.form-pagamento input[type=text]:hover{
+   box-shadow: 8px 7px 21px -2px rgba(0,0,0,0.43);
+}
+
+#pagar{
+    width: 100%;
+    height: 150%;
+    color:rgb(0, 0, 0);
+    background: rgba(61, 100, 120, 0.083);
+    cursor:pointer;
+    border-radius: 2px;
+}
+
+#pagar:hover{
+    scale:101%;
+    background-color: #069;
+    border-radius: 5px;
+}
