@@ -3,5 +3,11 @@
 window.alert("Olá Mundo!")
 
 
-var nome = document.getElementById("Nome-fundo")
-console.log(nome)
+const btn = document.getElementById("submit-btn");
+btn.addEventListener("click", function(event) {
+    event.preventDefault(); // Evita o envio do formulário
+    const nomeFundo = document.getElementById("Nome-fundo").value; 
+    console.log(`Nome do Fundo: ${nomeFundo}`);
+} ); 
+
+

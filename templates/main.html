@@ -10,28 +10,33 @@
 <body>
     <header>
         Bem-vindo ao Site-Cotas!
-        <nav-bar class="nav-bar">
+        <nav class="nav-bar">
                 <li>
                     <a href="contato" target="_blank">Contato</a>
                 </li>
-                <li><a href="pagamento" target="_blank">Pagamento</a></li>
-        </nav-bar>
+                <li>
+                    <a href="pagamento" target="_blank">Pagamento</a>
+                </li>
+                <li>
+                    <a href="#">Informações</a>
+                </li>
+        </nav>
     </header>
     <form action="" method="post">
         <label for="Nome-fundo">
             Nome do Fundo:
-            <input type="text" name="Nome-fundo" id="Nome-fundo" class="base">
+            <input type="text" name="Nome-fundo" id="Nome-fundo" class="base" required>
         </label>
         <label for="Valor-cota">
             Valor da Cota:
-            <input type="text" name="Valor-cota" id="Valor-cota" class="base">
+            <input type="text" name="Valor-cota" id="Valor-cota" class="base" required>
         </label>
         <label for="Quantidade-cota">
             Quantidade de Cotas: 
-            <input type="number" name="Quantidade-cota" id="Quantidade-cota" class="base">
+            <input type="number" name="Quantidade-cota" id="Quantidade-cota" class="base" required>
         </label>
         <br>
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Enviar" id="submit-btn">
     </form>
 </body>
 </html>
