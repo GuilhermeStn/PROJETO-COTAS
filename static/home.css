@@ -32,6 +32,7 @@ header{
 
 .nav-bar li a:hover{ 
     color: rgb(184, 102, 102);
+    font-size: 22px;
 }
 
 
