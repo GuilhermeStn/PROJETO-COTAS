@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/home.css">
-    <title>Site-Cotas</title>
     <script src="/static/dados-fundos.js"></script>
+    <title>Site-Cotas</title>
 </head> 
 <body>
     <header>
@@ -35,8 +35,12 @@
             Quantidade de Cotas: 
             <input type="number" name="Quantidade-cota" id="Quantidade-cota" class="base" required>
         </label>
+         <label for="Rendimento-cota">
+            Rendimento de Cotas: 
+            <input type="number" name="Rendimento-cota" id="Rendimento-cota" class="base" required>
+        </label>
         <br>
-        <input type="submit" value="Enviar" id="submit-btn">
+        <button type="button" class="base" onclick="base()">Enviar</button>
     </form>
 </body>
 </html>
