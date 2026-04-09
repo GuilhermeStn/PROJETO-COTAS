@@ -84,3 +84,13 @@ input[type="submit"]:hover{
     color:white;
     scale: 103%;
 }
+
+.mostrar-resultado{
+    background: white;
+    padding: 25px;
+    width: 400px; 
+    margin: 40px auto; /* centraliza o form horizontalmente */
+    border-radius: 10px;
+    box-shadow:  0 10px 20px rgb(31, 30, 30);
+    text-align: center;
+}

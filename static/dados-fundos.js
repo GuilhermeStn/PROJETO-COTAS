@@ -24,6 +24,7 @@ function juros(nome,valor,rendimento,quantidade){
     console.log(valor);
     console.log(rendimento);
     console.log(quantidade);
+    let resultadohtml = `<h2> Resultado do Fundo ${nome} </h2>`
     if (quantidade==0){
         quantidade = 1 
         console.log("Addc uma cota pra simular o rendimento")
@@ -43,5 +44,12 @@ function juros(nome,valor,rendimento,quantidade){
              var valor_investido = quantidade * valor
              console.log("valor investido nas cotas R$:" + valor_investido.toFixed(2))
          }
+         alert("o valor investido é: R$ " + valor_investido.toFixed(2) + " com a quantidade de " + quantidade + " cotas, o rendimento é de R$ " + rendimento_valor.toFixed(2))
         }
+}
+
+function criarElemento(){
+    alert("Clique em mim!")
+    var elemento = document.createElement("p");
+    elemento.innerText = "Este é um novo elemento criado dinamicamente!";
 }
