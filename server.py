@@ -14,21 +14,14 @@ def index():
     print(f"Quantidade de cotas: {quantidade}")
     return render_template("main.html")
     
-
-@app.route("/pagamento",methods=["GET","POST"])
-def pagamento():
-    email = request.form.get("email-valor")
-    dadosc = request.form.get("dados-cart")
-    print(f"O email é {email}")
-    print(f"Os dados do cartão {dadosc}")
-    
-    return render_template("pagamento.html")
-
-
-@app.route("/contato")
+@app.route("/index.html")
 def contato():
-    return render_template("contato.html")
+    return render_template("index.html")
 
+
+@app.route("/sobre.html")
+def sobre():
+    return render_template("sobre.html")
 
 app.run()
 
